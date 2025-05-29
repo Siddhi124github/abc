@@ -31,34 +31,72 @@
       font-size: 26px;
       font-weight: bold;
     }
-nav ul {
-  list-style: none;
+/* Navbar Base */
+.navbar {
   display: flex;
-  gap: 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #d3975b;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-    nav ul li a {
-  position: relative;
-  color: rgb(3, 3, 3);
-  font-weight: 500;
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  transition: color 0.3s ease;
+  font-weight: 500;
 }
 
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px; /* spacing below the text */
-  width: 0%;
-  height: 2px;
-  background-color: orange;
-  transition: width 0.3s ease;
+/* Hamburger (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
-nav ul li a:hover::after {
-  width: 100%;
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #f1c28d;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 180px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .nav-links li a {
+    color: #432803;
+  }
 }
+
 
    
 
@@ -594,15 +632,18 @@ nav ul li a:hover::after {
 <div class="logo">
   <img src="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" alt="OTPRO Logo" style="height: 30px;" />
 </div>
-
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
+<nav class="navbar">
+  
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="nav-links" id="navLinks">
+   <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  </ul>
+</nav>
+
+  
   </header>
 
 
