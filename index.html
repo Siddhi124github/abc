@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>OTPRO</title>
-  <link rel="icon" type="image/png" href="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" />
+  <link rel="icon" type="image/png" href="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" >
   <style>
-    /* --- Your Provided CSS --- */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,34 +29,36 @@
       font-size: 26px;
       font-weight: bold;
     }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
 
     nav ul li a {
-      position: relative;
-      color: rgb(3, 3, 3);
-      font-weight: 500;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
+  position: relative;
+  color: rgb(3, 3, 3);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
 
-    nav ul li a::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: -4px; /* spacing below the text */
-      width: 0%;
-      height: 2px;
-      background-color: orange;
-      transition: width 0.3s ease;
-    }
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; /* spacing below the text */
+  width: 0%;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
 
-    nav ul li a:hover::after {
-      width: 100%;
-    }
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+   
 
     section {
       padding: 80px 40px;
@@ -114,137 +115,139 @@
       background-color: #f5f4f4;
     }
 
-    /* About Us with bright orange background */
-    #about {
-      width: 100%;
-      max-width: none;
-      margin: 0;
-      padding: 100px 40px;
-      background:
-        linear-gradient(rgba(255, 153, 51, 0.45), rgba(255, 102, 0, 0.35)),
-        url("bg img.jpg") center/cover no-repeat;
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      position: relative;
-      overflow: hidden;
-      animation: fadeInUp 1s ease-in-out both;
-    }
+   /* About Us with bright orange background */
+ #about {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 100px 40px;
+  background:
+    linear-gradient(rgba(255, 153, 51, 0.45), rgba(255, 102, 0, 0.35)),
+    url("bg img.jpg") center/cover no-repeat;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 1s ease-in-out both;
+}
 
-    #about .section-title {
-      font-size: 42px;
-      margin-bottom: 30px;
-      color: #ffffff;
-      text-align: center;
-      text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-    }
+#about .section-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
 
-    .about-content {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(20, 20, 20, 0.6); /* darker container */
-      padding: 40px 50px;
-      border-radius: 14px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-      backdrop-filter: blur(6px);
-      animation: fadeInText 1.2s ease forwards;
-    }
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(20, 20, 20, 0.6); /* darker container */
+  padding: 40px 50px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  animation: fadeInText 1.2s ease forwards;
+}
 
-    .about-content p {
-      font-size: 18px;
-      line-height: 1.9;
-      color: #fffdf8; /* brighter text */
-      margin-bottom: 22px;
-      animation: fadeInParagraph 0.6s ease forwards;
-      opacity: 0;
-      transform: translateY(20px);
-    }
+.about-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #fffdf8; /* brighter text */
+  margin-bottom: 22px;
+  animation: fadeInParagraph 0.6s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
 
-    .about-content p strong {
-      color: #ffeabf;
-    }
+.about-content p strong {
+  color: #ffeabf;
+}
 
-    .about-content em {
-      color: #ffcc99;
-      font-style: italic;
-    }
+.about-content em {
+  color: #ffcc99;
+  font-style: italic;
+}
 
-    .about-content p:nth-child(1) { animation-delay: 0.2s; }
-    .about-content p:nth-child(2) { animation-delay: 0.4s; }
-    .about-content p:nth-child(3) { animation-delay: 0.6s; }
-    .about-content p:nth-child(4) { animation-delay: 0.8s; }
-    .about-content p:nth-child(5) { animation-delay: 1s; }
-    .about-content p:nth-child(6) { animation-delay: 1.2s; }
+.about-content p:nth-child(1) { animation-delay: 0.2s; }
+.about-content p:nth-child(2) { animation-delay: 0.4s; }
+.about-content p:nth-child(3) { animation-delay: 0.6s; }
+.about-content p:nth-child(4) { animation-delay: 0.8s; }
+.about-content p:nth-child(5) { animation-delay: 1s; }
+.about-content p:nth-child(6) { animation-delay: 1.2s; }
 
-    @keyframes fadeInText {
-      0% {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    @keyframes fadeInParagraph {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@keyframes fadeInParagraph {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    @media (max-width: 768px) {
-      #about {
-        padding: 60px 20px;
-      }
-      .about-content {
-        padding: 25px;
-      }
-      #about .section-title {
-        font-size: 34px;
-      }
-      .about-content p {
-        font-size: 16px;
-      }
-    }
+@media (max-width: 768px) {
+  #about {
+    padding: 60px 20px;
+  }
+  .about-content {
+    padding: 25px;
+  }
+  #about .section-title {
+    font-size: 34px;
+  }
+  .about-content p {
+    font-size: 16px;
+  }
+}
 
     .services-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 30px;
-      justify-content: center;
-      max-width: 1100px;
-      margin: 30px auto 0 auto;
-    }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 30px auto 0 auto;
+}
 
-    .service-box {
-      background-color: rgb(231, 181, 106);
-      padding: 25px;
-      border-radius: 10px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s;
-    }
+.service-box {
+  background-color: rgb(231, 181, 106);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
 
-    .service-box:hover {
-      transform: translateY(-5px);
-    }
+.service-box:hover {
+  transform: translateY(-5px);
+}
 
-    .service-box .icon {
-      font-size: 70px;
-      margin-bottom: 10px;
-    }
+.service-box .icon {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
 
-    .service-box h3 {
-      color: #d15d02;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
+.service-box h3 {
+  color: #d15d02;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
-    .service-box p {
-      font-size: 20px;
-      color: #4a3b28;
-    }
+.service-box p {
+  font-size: 20px;
+  color: #4a3b28;
+}
+
+
 
     #contact a {
       color: rgb(223, 113, 10);
@@ -264,219 +267,228 @@
       font-size: 14px;
     }
 
-    .mission-vision-wrapper {
-      padding: 100px 40px;
-      background: linear-gradient(135deg, #d3975b, #f1c28d);
-      position: relative;
-      overflow: hidden;
-    }
+  .mission-vision-wrapper {
+  padding: 100px 40px;
+  background: linear-gradient(135deg, #d3975b, #f1c28d);
+  position: relative;
+  overflow: hidden;
+}
 
-    .mission-vision-title {
-      text-align: center;
-      font-size: 38px;
-      font-weight: 700;
-      margin-bottom: 60px;
-      color: #faeee2;
-      text-shadow: 0 1px 1px rgba(255, 204, 153, 0.6);
-    }
+.mission-vision-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #faeee2;
+  text-shadow: 0 1px 1px rgba(255, 204, 153, 0.6);
+}
 
-    .mission-vision-container.split {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      gap: 40px;
-      max-width: 1100px;
-      margin: 0 auto;
-      align-items: stretch;
-    }
+.mission-vision-container.split {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
 
-    .vertical-divider {
-      width: 2px;
-      background: linear-gradient(to bottom, #ff6600, #ffaf7b);
-      border-radius: 2px;
-      opacity: 0.7;
-    }
+.vertical-divider {
+  width: 2px;
+  background: linear-gradient(to bottom, #ff6600, #ffaf7b);
+  border-radius: 2px;
+  opacity: 0.7;
+}
 
-    .mission-vision-box.split {
-      background: rgba(255, 255, 255, 0.65);
-      border-radius: 18px;
-      padding: 45px 35px;
-      box-shadow: 0 10px 40px rgba(223, 113, 10, 0.1);
-      backdrop-filter: blur(10px);
-      transition: all 0.5s ease;
-      transform: translateY(60px);
-      opacity: 0;
-      animation-fill-mode: forwards;
-    }
+.mission-vision-box.split {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 45px 35px;
+  box-shadow: 0 10px 40px rgba(223, 113, 10, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.5s ease;
+  transform: translateY(60px);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
 
-    .mission-vision-box.split:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(223, 113, 10, 0.2);
-    }
+.mission-vision-box.split:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(223, 113, 10, 0.2);
+}
 
-    .mission-vision-box.split h3 {
-      font-size: 26px;
-      margin-bottom: 20px;
-      color: #c65300;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
+.mission-vision-box.split h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #c65300;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 
-    .icon-circle {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 132, 0, 0.15);
-      color: #ff6600;
-      font-size: 22px;
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      box-shadow: 0 3px 8px rgba(223, 113, 10, 0.2);
-    }
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 132, 0, 0.15);
+  color: #ff6600;
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(223, 113, 10, 0.2);
+}
 
-    .mission-vision-box.split p {
-      font-size: 16px;
-      line-height: 1.75;
-      color: #432803;
-    }
+.mission-vision-box.split p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #432803;
+}
 
-    /* Fade-in animation */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(60px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-on-scroll.visible {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .mission-vision-container.split {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .vertical-divider {
+    display: none;
+  }
+}
+
+.contact {
+  background-color: rgb(31, 23, 9);
+  color: white;
+  padding: 60px 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.contact a {
+  color: white;
+  text-decoration: underline;
+}
+.contact a:hover {
+  opacity: 0.8;
+}
 
     .fade-in-on-scroll.visible {
-      animation: fadeInUp 1s ease forwards;
+      animation: fadeInUp 0.8s ease forwards;
     }
 
-    /* Responsive behavior */
     @media (max-width: 768px) {
-      .mission-vision-container.split {
-        grid-template-columns: 1fr;
-        gap: 30px;
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
       }
-      .vertical-divider {
-        display: none;
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .services-container {
+        flex-direction: column;
+      }
+      #about {
+        margin-bottom: 40px;
+        padding: 60px 20px;
+        max-width: 100%;
+        border-radius: 0;
+      }
+      .mission-vision-container {
+        flex-direction: column;
+        margin: 40px 20px 60px 20px;
+      }
+      .mission-vision-box {
+        flex: 1 1 100%;
+        margin-bottom: 25px;
       }
     }
+    #why-choose-us {
+  padding: 80px 40px;
+  background: #f1d8a9;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(223, 113, 10, 0.15);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
 
-    .contact {
-      background-color: rgb(31, 23, 9);
-      color: white;
-      padding: 60px 40px;
-      text-align: center;
-      font-size: 18px;
-      line-height: 1.8;
-    }
-    .contact a {
-      color: white;
-      text-decoration: underline;
-    }
-    .contact a:hover {
-      opacity: 0.8;
-    }
+#why-choose-us .section-title {
+  font-size: 36px;
+  color: #d15d02;
+  margin-bottom: 50px;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(255, 132, 0, 0.3);
+}
+
+.choose-us-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.choose-us-box {
+  background: #fff7e6;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(255, 140, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+.choose-us-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(255, 140, 0, 0.3);
+  background-color: #f5dda5; /* lighter warm shade on hover */
+  cursor: pointer;
+}
+
+
+
+.choose-us-box h3 {
+  color: #d15d02;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.choose-us-box p {
+  font-size: 16px;
+  color: #6b4a02;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.choose-us-summary {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #6b4a02;
+  font-weight: 500;
+  line-height: 1.5;
+}
 
   </style>
+ 
 </head>
 <body>
-
-<header>
-  <div class="logo">OTPRO</div>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#mission-vision">Mission & Vision</a></li>
-      <li><a href="#why-choose-us">Why Choose Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<section id="home">
-  <h2>Welcome to OTPRO</h2>
-  <p>We provide exceptional services with a passion for excellence.</p>
-</section>
-
-<section id="about">
-  <h2 class="section-title">About Us</h2>
-  <div class="about-content">
-    <p><strong>OTPRO</strong> is a leader in professional services, committed to delivering top-notch solutions.</p>
-    <p>Our team consists of highly skilled experts dedicated to achieving excellence in every project.</p>
-    <p><em>Innovation and quality</em> are at the heart of everything we do.</p>
-    <p>We prioritize client satisfaction and work closely to understand your unique needs.</p>
-    <p>Our mission is to empower businesses through tailored solutions that drive growth.</p>
-    <p>Join us on our journey to success and excellence.</p>
-  </div>
-</section>
-
-<section id="services">
-  <h2>Our Services</h2>
-  <div class="services-container">
-    <div class="service-box">
-      <div class="icon">💻</div>
-      <h3>Consulting</h3>
-      <p>Expert advice to guide your business decisions.</p>
-    </div>
-    <div class="service-box">
-      <div class="icon">⚙️</div>
-      <h3>Development</h3>
-      <p>Custom software solutions tailored to your needs.</p>
-    </div>
-    <div class="service-box">
-      <div class="icon">🚀</div>
-      <h3>Marketing</h3>
-      <p>Strategies to boost your brand and reach your audience.</p>
-    </div>
-  </div>
-</section>
-
-<section id="mission-vision" class="mission-vision-wrapper">
-  <h2 class="mission-vision-title">Mission & Vision</h2>
-  <div class="mission-vision-container split">
-    <div class="mission-vision-box split">
-      <h3><span class="icon-circle">🎯</span> Mission</h3>
-      <p>To provide innovative solutions that empower businesses to succeed in a rapidly changing world.</p>
-    </div>
-    <div class="vertical-divider"></div>
-    <div class="mission-vision-box split">
-      <h3><span class="icon-circle">🌟</span> Vision</h3>
-      <p>To be recognized as a global leader in professional services, delivering unmatched quality and value.</p>
-    </div>
-  </div>
-</section>
-
-<section id="why-choose-us">
-  <h2>Why Choose Us</h2>
-  <p>Because we are dedicated, innovative, and passionate about your success. Our commitment to quality and client satisfaction sets us apart.</p>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>Email us at <a href="mailto:info@otpro.com">info@otpro.com</a> or call <a href="tel:+1234567890">+1 (234) 567-890</a></p>
-  <p>Follow us on social media:</p>
-  <p>
-    <a href="#" aria-label="Facebook">Facebook</a> | 
-    <a href="#" aria-label="Twitter">Twitter</a> | 
-    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-  </p>
-</section>
-
-<footer>
-  &copy; 2025 OTPRO. All rights reserved.
-</footer>
-
-</body>
-</html>
 
   <header>
 <div class="logo">
