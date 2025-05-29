@@ -411,15 +411,6 @@ nav ul li a:hover::after {
 .fade-in-on-scroll.visible {
   animation: fadeInUp 1s ease forwards;
 }
-@media (max-width: 600px) {
-  #contact > div {
-    max-width: 100%;      /* full width on mobile */
-    padding: 80px 30px;   /* more padding all around */
-    min-height: 600px;    /* taller container */
-    margin: 0 auto 60px auto;
-    border-radius: 12px;  /* keep rounded corners */
-  }
-}
 
 /* ===== Responsive behavior ===== */
 
@@ -884,6 +875,16 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
 
     </div>
   <section id="contact" class="fade-in-on-scroll">
+    <style>
+  @media (max-width: 600px) {
+    #contact > div {
+      padding: 80px 25px !important;
+      min-height: 650px !important;
+      max-width: 95% !important;
+    }
+  }
+</style>
+
   <div style="
       background-color: #3b3835;
       padding: 60px 40px;
