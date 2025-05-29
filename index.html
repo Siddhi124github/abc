@@ -411,6 +411,15 @@ nav ul li a:hover::after {
 .fade-in-on-scroll.visible {
   animation: fadeInUp 1s ease forwards;
 }
+@media (max-width: 600px) {
+  #contact > div {
+    max-width: 100%;      /* full width on mobile */
+    padding: 80px 30px;   /* more padding all around */
+    min-height: 600px;    /* taller container */
+    margin: 0 auto 60px auto;
+    border-radius: 12px;  /* keep rounded corners */
+  }
+}
 
 /* ===== Responsive behavior ===== */
 
@@ -887,16 +896,7 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
       font-size: 18px;
       line-height: 1.6;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  "><style>
-  @media (max-width: 600px) {
-    #contact > div {
-      min-height: 650px; /* or adjust as needed */
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-  }
-</style>
-
+  ">
     <h2 style="font-size: 32px; margin-bottom: 35px; text-align: center; color: #d15d02;">Contact Us</h2>
 
     <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
