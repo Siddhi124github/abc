@@ -8,54 +8,36 @@
   <title>OTPRO</title>
   <link rel="icon" type="image/png" href="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" >
   <style>
-   * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
+    header {
+      background-color: #f8f5f1;
+      color: rgb(223, 113, 10);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-header {
-  background-color: #f8f5f1;
-  color: rgb(223, 113, 10);
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-/* Logo */
-.logo img {
-  height: 30px;
-}
-
-/* Hamburger */
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  position:absolute;
-  right:2px;
-  top:0px;
-  color: rgb(223, 113, 10);
-}
-
-/* Nav Links */
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
 }
 
-nav ul li a {
+    nav ul li a {
   position: relative;
   color: rgb(3, 3, 3);
   font-weight: 500;
@@ -67,7 +49,7 @@ nav ul li a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -4px;
+  bottom: -4px; /* spacing below the text */
   width: 0%;
   height: 2px;
   background-color: orange;
@@ -76,38 +58,6 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 70px;
-    right: 40px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    padding: 15px 20px;
-    display: none;
-  }
-
-  nav.show {
-    display: block;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  nav ul li a {
-    color: #222;
-  }
 }
 
    
@@ -641,22 +591,20 @@ nav ul li a:hover::after {
 </head>
 <body>
 
- <header>
-  <div class="logo">
-    <img src="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" alt="OTPRO Logo" style="height: 30px;" />
-  </div>
+  <header>
+<div class="logo">
+  <img src="WhatsApp Image 2025-05-26 at 2.55.26 PM.jpeg" alt="OTPRO Logo" style="height: 30px;" />
+</div>
 
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-  <nav id="navbar">
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
 
@@ -967,17 +915,10 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
     Submit
   </button>
 </form>
-<style>
-  
+
      
     </div>
   </div>
-<script>
-  function toggleMenu() {
-    const nav = document.getElementById("navbar");
-    nav.classList.toggle("show");
-  }
-</script>
 
   <!-- Intersection Observer Animation -->
   <script>
@@ -994,5 +935,4 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
     document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer.observe(el));
   </script>
 </section>
-
 
