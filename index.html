@@ -76,39 +76,39 @@
     }
 
     @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-        position:absolute;
-        right:4px;
-        top:0px;
-      }
+  .hamburger {
+    display: block;
+    position:absolute;
+    right:2px;
+    top:0px;
+  }
 
-      nav {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-           background-color: #f8f5f1;
-        color: rgb(223, 113, 10);
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        padding: 15px 20px;
-      }
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #f8f5f1; /* Match desktop background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 15px 20px;
+  }
 
-      nav.show {
-        display: block;
-      }
+  nav.show {
+    display: block;
+  }
 
-      nav ul {
-        flex-direction: column;
-        gap: 15px;
-      }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-      nav ul li a {
-        color: #222;
-      }
-    }
+  nav ul li a {
+    color: rgb(3, 3, 3); /* Match desktop color */
+  }
+}
+
 
     section {
       padding: 80px 40px;
