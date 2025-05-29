@@ -873,20 +873,8 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
 </section>
 
     </div>
-  <section id="contact" class="fade-in-on-scroll">
-  <div style="
-      background-color: #3b3835;
-      padding: 60px 40px;
-      min-height: 500px;  
-      border-radius: 12px;
-      max-width: 1200px;
-      margin: 0 auto 60px auto;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      color: white;
-      font-size: 18px;
-      line-height: 1.6;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  ">
+ <section id="contact" class="fade-in-on-scroll">
+  <div class="contact-container">
     <h2 style="font-size: 32px; margin-bottom: 35px; text-align: center; color: #d15d02;">Contact Us</h2>
 
     <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
@@ -896,79 +884,135 @@ new industry benchmarks for operational excellence, customer satisfaction, and s
           <strong>Phone:</strong> +91 98765 43210
         </p>
         <p style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-          <strong>Website:</strong> <a href="https://www.otpro.in" target="_blank" style="color: #d15d02; text-decoration: underline;">www.otpro.in</a>
+          <strong>Website:</strong> 
+          <a href="https://www.otpro.in" target="_blank" style="color: #d15d02; text-decoration: underline;">www.otpro.in</a>
         </p>
         <p style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-          <strong>Email:</strong> <a href="mailto:info@otpro.in" style="color: #d15d02; text-decoration: underline;">info@otpro.in</a>
+          <strong>Email:</strong> 
+          <a href="mailto:info@otpro.in" style="color: #d15d02; text-decoration: underline;">info@otpro.in</a>
         </p>
         <p style="display: flex; align-items: center; gap: 12px;">
-          <strong>Address:</strong> 1106, Hallmark Business Plaza, Jagat
-Vidya Marg, Sant Dnyaneshwar Nagar,
-Bandra East, Mumbai, Maharashtra -
-400051.
+          <strong>Address:</strong> 1106, Hallmark Business Plaza, Jagat Vidya Marg, Sant Dnyaneshwar Nagar, Bandra East, Mumbai, Maharashtra - 400051.
         </p>
       </div>
 
-    <form
-  action="https://formsubmit.co/naiksiddhics232410@gmail.com"
-  method="POST"
-  style="flex: 1 1 400px; min-width: 300px; display: flex; flex-direction: column; gap: 20px;"
->
-  <!-- Disable captcha -->
-  <input type="hidden" name="_captcha" value="false">
+      <!-- Contact Form -->
+      <form
+        action="https://formsubmit.co/naiksiddhics232420@gmail.com"
+        method="POST"
+        style="flex: 1 1 400px; min-width: 300px; display: flex; flex-direction: column; gap: 20px;"
+      >
+        <input type="hidden" name="_captcha" value="false">
 
-  <input
-    type="text"
-    name="name"
-    placeholder="Your Name"
-    required
-    minlength="3"
-    maxlength="50"
-    pattern="[A-Za-z\s]+"
-    title="Name should contain only letters and spaces, 3 to 50 characters."
-    style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit;"
-  />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+          minlength="3"
+          maxlength="50"
+          pattern="[A-Za-z\s]+"
+          title="Name should contain only letters and spaces, 3 to 50 characters."
+          style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit;"
+        />
 
-  <input
-    type="email"
-    name="email"
-    placeholder="Your Email"
-    required
-    maxlength="100"
-    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-    title="Please enter a valid email address."
-    style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit;"
-  />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+          maxlength="100"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          title="Please enter a valid email address."
+          style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit;"
+        />
 
-  <textarea
-    name="message"
-    rows="5"
-    placeholder="Your Message"
-    required
-    minlength="5"
-    maxlength="500"
-    style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit; resize: vertical;"
-  ></textarea>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+          minlength="5"
+          maxlength="500"
+          style="padding: 12px 15px; border-radius: 6px; border: none; font-size: 16px; font-family: inherit; resize: vertical;"
+        ></textarea>
 
-  <button
-    type="submit"
-    style="
-      background-color: #d15d02;
+        <button
+          type="submit"
+          style="
+            background-color: #d15d02;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          "
+          onmouseover="this.style.backgroundColor='#b14a01';"
+          onmouseout="this.style.backgroundColor='#d15d02';"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Styles for responsiveness -->
+  <style>
+    .contact-container {
+      background-color: #3b3835;
+      padding: 60px 40px;
+      min-height: 500px;  
+      border-radius: 12px;
+      max-width: 1200px;
+      margin: 0 auto 60px auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       color: white;
-      border: none;
-      padding: 15px;
-      border-radius: 8px;
       font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    "
-    onmouseover="this.style.backgroundColor='#b14a01';"
-    onmouseout="this.style.backgroundColor='#d15d02';"
-  >
-    Submit
-  </button>
-</form>
+      line-height: 1.6;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    @media (max-width: 768px) {
+      .contact-container {
+        padding: 40px 20px;
+        margin: 20px;
+        border-radius: 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-container {
+        padding: 30px 15px;
+        margin: 10px;
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('show');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.fade-in-on-scroll').forEach(el => observer.observe(el));
+  </script>
+</section>
+
 
      
     </div>
